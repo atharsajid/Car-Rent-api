@@ -15,10 +15,4 @@ urlpatterns = [
 
          views.DeleteCarAPIView.as_view(), name="car_delete"),
 
-         views.DeleteUserAPIView.as_view(), name="car_delete"),
-    path("users/",views.ListUserAPIView.as_view(),name="user_list"),
-    path("create/", views.CreateUserAPIView.as_view(),name="user_create"),
-    path("update/<int:pk>/",views.UpdateUserAPIView.as_view(),name="user_update"),
-    path("delete/<int:pk>/",views.DeleteUserAPIView.as_view(),name="user_delete")
-
 ]
