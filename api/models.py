@@ -18,11 +18,11 @@ class Users(models.Model):
 
 
 class CarList(models.Model):
-    category = models.CharField(max_length=50)
-    brand = models.CharField(max_length=50)
-    car = models.CharField(max_length=50)
-    rent = models.CharField(max_length=250,)
-    rating = models.CharField(max_length=70,)
+    category = models.CharField(max_length=100)
+    brand = models.CharField(max_length=100)
+    car = models.CharField(max_length=100)
+    rent = models.CharField(max_length=50,)
+    rating = models.CharField(max_length=100,)
     imagepath = models.CharField(max_length=250,)
 
     def __str___(self):
