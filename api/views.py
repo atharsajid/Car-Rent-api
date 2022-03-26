@@ -53,5 +53,5 @@ class UpdateCarAPIView(UpdateAPIView):
 
 class DeleteCarAPIView(DestroyAPIView):
     """This endpoint allows for deletion of a specific Todo from the database"""
-    queryset = .objects.all()
+    queryset = CarList.objects.all()
     serializer_class = CarSerializer
