@@ -20,7 +20,7 @@ class Users(models.Model):
 class CarList(models.Model):
     category = models.CharField(max_length=50)
     brand = models.CharField(max_length=50)
-    car = models.IntegerField()
+    car = models.CharField(max_length=50)
     rent = models.CharField(max_length=250,)
     rating = models.CharField(max_length=70,)
     imagepath = models.CharField(max_length=250,)
