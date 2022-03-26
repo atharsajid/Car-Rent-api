@@ -7,7 +7,7 @@ from django.db import models
 class Users(models.Model):
     firstname = models.CharField(max_length=50)
     lastname = models.CharField(max_length=50)
-    contact = models.IntegerField()
+    contact = models.CharField(max_length=50)
     address = models.CharField(max_length=250,)
     emailaddress = models.CharField(max_length=70,)
     username = models.CharField(max_length=20)
@@ -20,7 +20,7 @@ class Users(models.Model):
 class CarList(models.Model):
     category = models.CharField(max_length=50)
     brand = models.CharField(max_length=50)
-    car = models.IntegerField()
+    car = models.CharField(max_length=50)
     rent = models.CharField(max_length=250,)
     rating = models.CharField(max_length=70,)
     imagepath = models.CharField(max_length=250,)
